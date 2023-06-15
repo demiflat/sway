@@ -41,6 +41,9 @@ rpms:
   - debootstrap
   - emacs
   - et
+  - dmenu
+  - ddccontrol
+  - ddccontrol-gtk
   - figlet
   - fish
   - foliate
@@ -51,7 +54,6 @@ rpms:
   - gitk
   - gnumeric
   - golang
-  # - gstreamer1-plugin-openh264
   - gstreamer1-plugins-base-tools
   - gstreamer1-plugins-entrans
   - gstreamer1-plugins-fc
@@ -63,9 +65,11 @@ rpms:
   - gstreamer1-svt-vp9
   - gstreamer1-vaapi  
   - gron
+  - helvum
   - hdparm
   - htop
   - iotop-c
+  - input-remapper
   - iperf3
   - jq
   - libreoffice
@@ -90,7 +94,6 @@ rpms:
   - neovim
   - net-tools
   - nmap
-  # - openh264
   - p7zip
   - pass
   - perf
@@ -102,6 +105,7 @@ rpms:
   - pv
   - pwgen
   - python3-pip  
+  - powertop
   - python3-virtualenv
   - qemu
   - simple-scan
@@ -122,6 +126,7 @@ rpms:
   - vit
   - vorbis-tools
   - vorbisgain
+  - wireguard-tools
   - w3m
   - waybar
   - wdisplays
@@ -135,15 +140,13 @@ rpms:
 # this is just an example selection.
 # If you leave this empty you can use yafti for post-boot installation
 flatpaks:
-  - org.freedesktop.Platform.ffmpeg-full
+  - runtime/org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
   - org.mozilla.firefox
   # - org.mozilla.Thunderbird
   - com.mattjakeman.ExtensionManager
-  # - org.libreoffice.LibreOffice
   - org.gnome.DejaDup
   - org.gustavoperedo.FontDownloader
   - com.github.tchx84.Flatseal
   - io.github.celluloid_player.Celluloid
   - org.videolan.VLC
-  - io.mpv.Mpv
   - us.zoom.Zoom
