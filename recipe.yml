@@ -6,7 +6,7 @@ name: sway
 
 # The native container image to build on top of
 # Warning: Non-uBlue images might function unexpectly
-base-image: ghcr.io/ublue-os/sericea-main
+base-image: ghcr.io/ublue-os/silverblue-main
 
 # What fedora version to use. Use an explicit version or `latest`.
 # If you use `latest`, you will be automatically updated
@@ -23,6 +23,7 @@ scripts:
  - vscodium.sh
  - vscodium-install.sh
  - vscodium-patch.sh
+ - wezterm.sh
 
 # a list of urls of .repo files that should be added to your system
 # this is the proper way to add copr repos to your image
@@ -104,11 +105,13 @@ rpms:
   - simple-scan
   - sox
   - strace
+  - sway
   - task
   - terminator
   - tlp
   - tmux
   - transmission
+  - tumbler
   - vdpauinfo
   - vim-enhanced
   - virt-install
