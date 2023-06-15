@@ -32,6 +32,7 @@ extrarepos:
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
+  - alacritty
   - aria2
   - chromium
   - clang
