@@ -1,0 +1,14 @@
+--- /usr/share/codium/resources/app/product.json	2022-11-07 21:09:46.582588828 -0800
++++ product.json.new	2022-11-07 21:07:06.733157889 -0800
+@@ -75,8 +75,9 @@
+   "checksumFailMoreInfoUrl": "https://go.microsoft.com/fwlink/?LinkId=828886",
+   "documentationUrl": "https://go.microsoft.com/fwlink/?LinkID=533484#vscode",
+   "extensionsGallery": {
+-    "serviceUrl": "https://open-vsx.org/vscode/gallery",
+-    "itemUrl": "https://open-vsx.org/vscode/item"
++    "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
++    "cacheUrl": "https://vscode.blob.core.windows.net/gallery/index",
++    "itemUrl": "https://marketplace.visualstudio.com/items"
+   },
+   "introductoryVideosUrl": "https://go.microsoft.com/fwlink/?linkid=832146",
+   "keyboardShortcutsUrlLinux": "https://go.microsoft.com/fwlink/?linkid=832144",

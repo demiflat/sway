@@ -1,0 +1,142 @@
+# Warning: only edit this file inside the images git repository.
+# If you are looking at this file in your root directory on your computer, editing it does nothing.
+
+# The image will be at ghcr.io/yourusername/name
+name: sway
+
+# The native container image to build on top of
+# Warning: Non-uBlue images might function unexpectly
+base-image: ghcr.io/ublue-os/sericea-main
+
+# What fedora version to use. Use an explicit version or `latest`.
+# If you use `latest`, you will be automatically updated
+# to the next major version assuming the image you're using as your base container
+# builds with the tag (all uBlue images do this).
+fedora-version: 38
+
+# This description will be visible in the container metadata
+description: desktop os as i like it
+
+# These scripts will be executed during the container build
+# Place scripts in scripts/ and put the corresponding filename here
+scripts:
+ - vscodium.sh
+ - vscodium-install.sh
+ - vscodium-patch.sh
+
+# a list of urls of .repo files that should be added to your system
+# this is the proper way to add copr repos to your image
+extrarepos:
+  - https://rpm.librewolf.net/librewolf-repo.repo
+
+# These rpms will be installed from the fedora repository
+# using rpm-ostree and will be preinstalled in the final image
+rpms:
+  - aria2
+  - chromium
+  - clang
+  - clipman
+  - debootstrap
+  - emacs
+  - et
+  - figlet
+  - fish
+  - foliate
+  - fortune-mod
+  - fzf
+  - gedit
+  - gh
+  - gitk
+  - gnumeric
+  # - gstreamer1-plugin-openh264
+  - gstreamer1-plugins-base-tools
+  - gstreamer1-plugins-entrans
+  - gstreamer1-plugins-fc
+  - gstreamer1-plugins-good-extras
+  - gstreamer1-plugins-good-gtk
+  - gstreamer1-plugins-ugly
+  - gstreamer1-rtsp-server
+  - gstreamer1-svt-av1
+  - gstreamer1-svt-vp9
+  - gstreamer1-vaapi  
+  - gron
+  - hdparm
+  - htop
+  - iotop-c
+  - iperf3
+  - jq
+  - libreoffice
+  - librewolf
+  - libva-intel-hybrid-driver
+  - libva-vdpau-driver
+  - libvdpau-va-gl  
+  - libvirt-client
+  - libvirt-daemon-kvm
+  - light
+  - links
+  - lua
+  - luajit
+  - make
+  - mako
+  - mkosi
+  - minicom
+  - mozilla-openh264
+  - mpv
+  - neovim
+  - net-tools
+  - nmap
+  # - openh264
+  - p7zip
+  - pass
+  - perf
+  - pip
+  - plotnetcfg
+  - powertop
+  - progress
+  - pulseaudio-utils
+  - pv
+  - pwgen
+  - python3-pip  
+  - python3-virtualenv
+  - qemu
+  - simple-scan
+  - sox
+  - strace
+  - task
+  - terminator
+  - tlp
+  - tmux
+  - transmission
+  - vdpauinfo
+  - vim-enhanced
+  - virt-install
+  - virt-manager
+  - virt-viewer
+  - vit
+  - vorbis-tools
+  - vorbisgain
+  - w3m
+  - waybar
+  - wdisplays
+  - wlsunset
+  - wofi
+  - wshowkeys
+  - xq
+  - zstd
+
+# These Flatpaks (from flathub) will be available for install on boot
+# this is just an example selection.
+# If you leave this empty you can use yafti for post-boot installation
+flatpaks:
+  - org.freedesktop.Platform.ffmpeg-full
+  - org.mozilla.firefox
+  # - org.mozilla.Thunderbird
+  - com.mattjakeman.ExtensionManager
+  # - org.libreoffice.LibreOffice
+  - org.gnome.DejaDup
+  - org.gustavoperedo.FontDownloader
+  - com.github.tchx84.Flatseal
+  - io.github.celluloid_player.Celluloid
+  - org.videolan.VLC
+  - io.mpv.Mpv
+  - us.zoom.Zoom
