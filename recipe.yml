@@ -74,6 +74,7 @@ rpms:
   - libvirt-daemon-kvm
   - light
   - links
+  - lolcat
   - lua
   - luajit
   - make
