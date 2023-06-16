@@ -20,6 +20,7 @@ description: desktop os as i like it
 # These scripts will be executed during the container build
 # Place scripts in scripts/ and put the corresponding filename here
 scripts:
+ - librewolf.sh
  - vscodium.sh
  - vscodium-install.sh
  - vscodium-patch.sh
@@ -44,6 +45,7 @@ rpms:
   - dmenu
   - ddccontrol
   - ddccontrol-gtk
+  - ffmpeg
   - figlet
   - fish
   - foliate
@@ -54,6 +56,8 @@ rpms:
   - gitk
   - gnumeric
   - golang
+  - grub-customizer
+  - gstreamer1-plugin-libav
   - gstreamer1-plugins-base-tools
   - gstreamer1-plugins-entrans
   - gstreamer1-plugins-fc
@@ -89,12 +93,15 @@ rpms:
   - mako
   - mkosi
   - minicom
-  - mozilla-openh264
+  # - mozilla-openh264
   - mpv
   - neovim
   - net-tools
   - nmap
+  - obs-studio
+  - obs-studio-plugin-x264
   - p7zip
+  - p7zip-plugins
   - pass
   - perf
   - pip
@@ -115,6 +122,7 @@ rpms:
   - task
   - terminator
   - tlp
+  - tlp-rdw
   - tmux
   - transmission
   - tumbler
