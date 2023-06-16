@@ -141,7 +141,7 @@ rpms:
 # If you leave this empty you can use yafti for post-boot installation
 flatpaks:
   - runtime/org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
-  - org.mozilla.firefox
+  # - org.mozilla.firefox
   # - org.mozilla.Thunderbird
   - com.mattjakeman.ExtensionManager
   - org.gnome.DejaDup
