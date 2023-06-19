@@ -134,6 +134,8 @@ rpms:
   - vit
   - vorbis-tools
   - vorbisgain
+  - vlc
+  - vlc-extras
   - wireguard-tools
   - w3m
   - waybar
@@ -156,5 +158,5 @@ flatpaks:
   - org.gustavoperedo.FontDownloader
   - com.github.tchx84.Flatseal
   - io.github.celluloid_player.Celluloid
-  - org.videolan.VLC
+  # - org.videolan.VLC
   - us.zoom.Zoom
