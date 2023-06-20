@@ -139,6 +139,8 @@ rpms:
   - wireguard-tools
   - w3m
   - waybar
+  - waydroid
+  - waydroid-selinux
   - wdisplays
   - wlsunset
   - wofi
