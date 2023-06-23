@@ -42,6 +42,7 @@ rpms:
   - debootstrap
   - emacs
   - et
+  - diffuse
   - dmenu
   - ddccontrol
   - ddccontrol-gtk
