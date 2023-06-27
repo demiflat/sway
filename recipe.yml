@@ -98,6 +98,7 @@ rpms:
   - mpv
   - neovim
   - net-tools
+  - NetworkManager-tui
   - nmap
   - obs-studio
   - obs-studio-plugin-x264
