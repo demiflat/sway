@@ -38,6 +38,10 @@ rpms:
   - aria2
   - chromium
   - clang
+  - clang-devel
+  - clang-resource-filesystem
+  - clang-tools-extra
+  - clang-tools-extra-devel
   - clipman
   - debootstrap
   - emacs
@@ -78,6 +82,7 @@ rpms:
   - input-remapper
   - iperf3
   - jq
+  - libstdc++-static
   - libreoffice
   - librewolf
   - libva-intel-hybrid-driver
