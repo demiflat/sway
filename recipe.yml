@@ -60,6 +60,7 @@ rpms:
   - gedit
   - gh
   - gitk
+  - git-delta
   - gnumeric
   - golang
   - grub-customizer
