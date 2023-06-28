@@ -47,6 +47,7 @@ rpms:
   - ddccontrol
   - ddccontrol-gtk
   - ffmpeg
+  - fido2-tools
   - figlet
   - fish
   - foliate
