@@ -155,6 +155,33 @@ rpms:
   - wshowkeys
   - xq
   - zstd
+# qmk  
+  - clang
+  - diffutils
+  - git
+  - gcc
+  - glibc-headers
+  - kernel-devel
+  - kernel-headers
+  - make
+  - unzip
+  - wget
+  - zip
+  - python3
+  - avr-binutils
+  - avr-gcc
+  - avr-gcc-c++
+  - avr-libc
+  - arm-none-eabi-binutils-cs
+  - arm-none-eabi-gcc-cs
+  - arm-none-eabi-gcc-cs-c++
+  - arm-none-eabi-newlib
+  - avrdude
+  - dfu-programmer
+  - dfu-util
+  - hidapi
+  - libusb1-devel
+  - libusb-compat-0.1-devel
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
