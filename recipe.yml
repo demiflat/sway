@@ -93,6 +93,7 @@ rpms:
   - libvirt-daemon-kvm
   - light
   - links
+  - lld
   - lolcat
   - lsd
   - lua
@@ -101,7 +102,6 @@ rpms:
   - mako
   - mkosi
   - minicom
-  # - mozilla-openh264
   - mpv
   - neovim
   - net-tools
@@ -135,6 +135,7 @@ rpms:
   - tmux
   - transmission
   - tumbler
+  - unzip
   - vdpauinfo
   - vim-enhanced
   - virt-install
@@ -155,20 +156,14 @@ rpms:
   - wofi
   - wshowkeys
   - xq
+  - zip
   - zstd
 # qmk  
-  - clang
   - diffutils
-  - git
   - gcc
   - glibc-headers
   - kernel-devel
   - kernel-headers
-  - make
-  - unzip
-  - wget
-  - zip
-  - python3
   - avr-binutils
   - avr-gcc
   - avr-gcc-c++
@@ -181,6 +176,7 @@ rpms:
   - dfu-programmer
   - dfu-util
   - hidapi
+  - hidapi-devel
   - libusb1-devel
   - libusb-compat-0.1-devel
 
