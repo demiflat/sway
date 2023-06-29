@@ -160,10 +160,10 @@ rpms:
   - zstd
 # qmk  
   - diffutils
-  - gcc
+  # - gcc
   - glibc-headers
-  - kernel-devel
-  - kernel-headers
+  # - kernel-devel
+  # - kernel-headers
   - avr-binutils
   - avr-gcc
   - avr-gcc-c++
