@@ -38,8 +38,12 @@ jobs:
         uses: easimon/maximize-build-space@master
         with:
           root-reserve-mb: 512
-          swap-size-mb: 1024
+          swap-size-mb: 512
+          remove-android: 'true'
+          remove-codeql: 'true'
+          remove-docker-images: 'true'
           remove-dotnet: 'true'
+          remove-haskell: 'true'
               
       - uses: actions/delete-package-versions@v4
         with: 
