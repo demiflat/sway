@@ -38,10 +38,10 @@ jobs:
         uses: easimon/maximize-build-space@master
         with:
           root-reserve-mb: 512
-          swap-size-mb: 512
+          swap-size-mb: 1024
           remove-android: 'true'
           remove-codeql: 'true'
-          remove-docker-images: 'true'
+          # remove-docker-images: 'true'
           remove-dotnet: 'true'
           remove-haskell: 'true'
               
@@ -49,7 +49,7 @@ jobs:
         with: 
           package-name: 'sway'
           package-type: 'container'
-          min-versions-to-keep: 3
+          min-versions-to-keep: 2
 
       # Checkout push-to-registry action GitHub repository
       - name: Checkout Push to Registry action

@@ -161,24 +161,24 @@ rpms:
 # qmk  
   - diffutils
   # - gcc
-  - glibc-headers
+  # - glibc-headers
   # - kernel-devel
   # - kernel-headers
-  - avr-binutils
-  - avr-gcc
-  - avr-gcc-c++
-  - avr-libc
-  - arm-none-eabi-binutils-cs
-  - arm-none-eabi-gcc-cs
-  - arm-none-eabi-gcc-cs-c++
-  - arm-none-eabi-newlib
+  # - avr-binutils
+  # - avr-gcc
+  # - avr-gcc-c++
+  # - avr-libc
+  # - arm-none-eabi-binutils-cs
+  # - arm-none-eabi-gcc-cs
+  # - arm-none-eabi-gcc-cs-c++
+  # - arm-none-eabi-newlib
   - avrdude
   - dfu-programmer
   - dfu-util
-  - hidapi
-  - hidapi-devel
-  - libusb1-devel
-  - libusb-compat-0.1-devel
+  # - hidapi
+  # - hidapi-devel
+  # - libusb1-devel
+  # - libusb-compat-0.1-devel
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
