@@ -43,13 +43,13 @@ rpms:
   - clang-tools-extra
   - clang-tools-extra-devel
   - clipman
+  - cmake
   - debootstrap
   - emacs
   - et
   - diffuse
   - dmenu
-  - ddccontrol
-  - ddccontrol-gtk
+  - dos2unix
   - ffmpeg
   - fido2-tools
   - figlet
@@ -172,7 +172,7 @@ rpms:
   # - arm-none-eabi-gcc-cs
   # - arm-none-eabi-gcc-cs-c++
   # - arm-none-eabi-newlib
-  - avrdude
+  # - avrdude
   - dfu-programmer
   - dfu-util
   # - hidapi
@@ -190,7 +190,7 @@ flatpaks:
   # - com.mattjakeman.ExtensionManager
   # - org.gnome.DejaDup
   # - org.gustavoperedo.FontDownloader
-  - com.github.tchx84.Flatseal
+  # - com.github.tchx84.Flatseal
   # - io.github.celluloid_player.Celluloid
   # - org.videolan.VLC
   # - us.zoom.Zoom
