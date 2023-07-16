@@ -37,11 +37,11 @@ rpms:
   - alacritty
   - aria2
   - chromium
-  - clang
-  - clang-devel
-  - clang-resource-filesystem
-  - clang-tools-extra
-  - clang-tools-extra-devel
+  # - clang
+  # - clang-devel
+  # - clang-resource-filesystem
+  # - clang-tools-extra
+  # - clang-tools-extra-devel
   - clipman
   - cmake
   - debootstrap
@@ -83,7 +83,7 @@ rpms:
   - input-remapper
   - iperf3
   - jq
-  - libstdc++-static
+  # - libstdc++-static
   - libreoffice
   - librewolf
   - libva-intel-hybrid-driver
@@ -93,9 +93,10 @@ rpms:
   - libvirt-daemon-kvm
   - light
   - links
-  - lld
+  # - lld
   - lolcat
   - lsd
+  - ltunify
   - lua
   - luajit
   - make
@@ -107,8 +108,8 @@ rpms:
   - net-tools
   - NetworkManager-tui
   - nmap
-  - obs-studio
-  - obs-studio-plugin-x264
+  # - obs-studio
+  # - obs-studio-plugin-x264
   - p7zip
   - p7zip-plugins
   - pass
@@ -136,21 +137,21 @@ rpms:
   - transmission
   - tumbler
   - unzip
-  - vdpauinfo
+  # - vdpauinfo
   - vim-enhanced
   - virt-install
   - virt-manager
   - virt-viewer
   - vit
-  - vorbis-tools
-  - vorbisgain
+  # - vorbis-tools
+  # - vorbisgain
   - vlc
   - vlc-extras
   - wireguard-tools
   - w3m
   - waybar
-  - waydroid
-  - waydroid-selinux
+  # - waydroid
+  # - waydroid-selinux
   - wdisplays
   - wlsunset
   - wofi
