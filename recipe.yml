@@ -84,7 +84,7 @@ rpms:
   - iperf3
   - jq
   # - libstdc++-static
-  - libreoffice
+  # - libreoffice
   - librewolf
   - libva-intel-hybrid-driver
   - libva-vdpau-driver
