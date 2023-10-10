@@ -20,11 +20,11 @@ description: desktop os as i like it
 # These scripts will be executed during the container build
 # Place scripts in scripts/ and put the corresponding filename here
 scripts:
- - librewolf.sh
+#  - librewolf.sh
  - vscodium.sh
  - vscodium-install.sh
  - vscodium-patch.sh
- - wezterm.sh
+#  - wezterm.sh
 
 # a list of urls of .repo files that should be added to your system
 # this is the proper way to add copr repos to your image
@@ -34,9 +34,9 @@ extrarepos:
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
-  - alacritty
+  # - alacritty
   - aria2
-  - chromium
+  # - chromium
   # - clang
   # - clang-devel
   # - clang-resource-filesystem
@@ -85,7 +85,7 @@ rpms:
   - jq
   # - libstdc++-static
   # - libreoffice
-  - librewolf
+  # - librewolf
   - libva-intel-hybrid-driver
   - libva-vdpau-driver
   - libvdpau-va-gl  
