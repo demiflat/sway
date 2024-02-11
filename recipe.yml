@@ -22,7 +22,7 @@ description: desktop os as i like it
 scripts:
 #  - librewolf.sh
  - mullvad.sh
- - mullvad-install.sh
+# - mullvad-install.sh
  - vscodium.sh
  - vscodium-install.sh
  - vscodium-patch.sh
