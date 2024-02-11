@@ -21,10 +21,12 @@ description: desktop os as i like it
 # Place scripts in scripts/ and put the corresponding filename here
 scripts:
 #  - librewolf.sh
+ - mullvad.sh
+ - mullvad-install.sh
  - vscodium.sh
  - vscodium-install.sh
  - vscodium-patch.sh
-#  - wezterm.sh
+ - wezterm.sh
 
 # a list of urls of .repo files that should be added to your system
 # this is the proper way to add copr repos to your image
