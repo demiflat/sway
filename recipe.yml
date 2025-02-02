@@ -5,24 +5,27 @@
 name: sway
 # The native container image to build on top of
 # Warning: Non-uBlue images might function unexpectly
-base-image: ghcr.io/ublue-os/silverblue-main
+#base-image: ghcr.io/ublue-os/silverblue-nvidia
+#base-image: ghcr.io/ublue-os/silverblue-main
+#base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/bazzite
 # What fedora version to use. Use an explicit version or `latest`.
 # If you use `latest`, you will be automatically updated
 # to the next major version assuming the image you're using as your base container
 # builds with the tag (all uBlue images do this).
-fedora-version: 41
+fedora-version: stable
 # This description will be visible in the container metadata
 description: desktop os as i like it
 # These scripts will be executed during the container build
 # Place scripts in scripts/ and put the corresponding filename here
 scripts:
   #  - librewolf.sh
+  - ghostty.sh
   - mullvad.sh
-  # - mullvad-install.sh
-  - vscodium.sh
-  - vscodium-install.sh
-  - vscodium-patch.sh
   - wezterm.sh
+  - vscodium.sh
+  - vscodium-install.sh # install here because we need to patch
+  - vscodium-patch.sh
 # a list of urls of .repo files that should be added to your system
 # this is the proper way to add copr repos to your image
 extrarepos:
@@ -30,6 +33,11 @@ extrarepos:
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
+  # from repos installed in scripts
+  - ghostty
+  - mullvad
+  - wezterm
+  #####
   # - alacritty
   - aria2
   # - chromium
@@ -134,7 +142,7 @@ rpms:
   - tumbler
   - unzip
   # - vdpauinfo
-  - vim-enhanced
+  #- vim-enhanced
   - virt-install
   - virt-manager
   - virt-viewer
